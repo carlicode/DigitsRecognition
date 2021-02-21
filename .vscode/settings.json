@@ -1,0 +1,17 @@
+{
+    "python.pythonPath": "C:\\Users\\Carlita\\AppData\\Local\\Programs\\Python\\Python38\\python.exe"
+},
+{
+    "command": "multiCommand.streamlitActiveFile",
+    "label": "Streamlit: Run Active File",
+    "description": "Streamlit run active file in active terminal",
+    "sequence": [
+        "workbench.action.terminal.focus",
+        {
+            "command": "workbench.action.terminal.sendSequence",
+            "args": {
+                "text": "streamlit run '${relativeFile}'\u000D"
+            }
+        }
+    ]
+}
